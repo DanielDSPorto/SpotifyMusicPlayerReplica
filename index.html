@@ -9,22 +9,31 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <h5 id="playlist-title">Titulo da minha primeira página</h5>
-    <img src='/images/oasis.png'></img>
-    <div class="below-cover">
-      <div class="song-info">
-        <div id="song-title">Título da música</div>
-        <div id="band-name" class="light-color">Nome da Banda</div>
+    <div class="player-container">
+      <h5 id="playlist-title">Playlist Hashtag</h5>
+      <img src='/images/boom_bap_flick.webp'></img>
+      <div class="below-cover">
+        <div class="song-info">
+          <div id="song-title">Boom Bap Flick</div>
+          <div id="band-name" class="light-color">Quincas Moreira</div>
+        </div>
+        <div class="bigger-button light-color"><i class="bi bi-suit-heart"></i></div>
       </div>
-      <div class="bigger-button light-color"><i class="bi bi-suit-heart"></i></div>
+      <audio id="audio" src="/songs/Boom Bap Flick - Quincas Moreira.mp3"></audio>
+      <div class="progress-container">
+        <div class="complete-song">
+          <div class="progress-tracker"></div>
+        </div>
+      </div>
+      <div class="action-box">
+        <div id="shuffle" ><i class="bi bi-shuffle"></i></div>
+        <div id="previous" class="bigger-button"><i class="bi bi-skip-start-fill"></i></div>
+        <div id="play" class="biggest-button"><i class="bi bi-play-circle-fill"></i></div>
+        <div id="pause" class="biggest-button hidden-button"><i class="bi bi-pause-circle-fill"></i></div>
+        <div id="next" class="bigger-button"><i class="bi bi-skip-end-fill"></i></div>
+        <div id="repeat"><i class="bi bi-repeat"></i></div>
+      </div>
     </div>
-    <div>Barra de Progresso</div>
-    <div class="action-box">
-      <div><i class="bi bi-shuffle"></i></div>
-      <div class="bigger-button"><i class="bi bi-skip-start-fill"></i></div>
-      <div class="biggest-button"><i class="bi bi-play-circle-fill"></i></div>
-      <div class="bigger-button"><i class="bi bi-skip-end-fill"></i></div>
-      <div><i class="bi bi-repeat"></i></div>
-    </div>
-  </body>
-</html>
+    <script src="/script.js"></script>
+    </body>
+    </html>
